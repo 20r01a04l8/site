@@ -14,3 +14,15 @@
             }
         }
     ],
+    "routers":[
+        {
+            "src": "/static/(.*)",
+            "dest": "/static/$1"
+
+        },
+        {
+            "src": "/(.*)",
+            "dest": "portfolio/wsgi.py"
+        }
+    ]
+}
